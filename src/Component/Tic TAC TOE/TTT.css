@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0f1b21;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 90%; /* Ensure the container takes up most of the screen */
+  width: 100%; /* Full width */
+}
+
+.title {
+  color: white;
+  font-size: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px; /* Reduced top margin for a compact look */
+}
+
+.title span {
+  color: #26ffcb;
+  padding-left: 15px;
+}
+
+.reset {
+  width: 250px;
+  height: 60px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50px;
+  background-color: #1f3540;
+  font-size: 26px;
+  color: #26ffcb;
+  margin-top: 30px; /* Adjust this for vertical spacing */
+  margin-bottom: 50px; /* Space at the bottom */
+  display: flex;
+  justify-content: center; /* Center button text horizontally */
+  align-items: center; /* Center button text vertically */
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 180px);
+  grid-template-rows: repeat(3, 180px);
+  gap: 10px;
+  margin-top: 20px; /* Reduced margin-top for tighter spacing */
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 180px;
+  width: 180px;
+  background-color: #1f3540;
+  border: 4px solid #0f1b21;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.box img {
+  max-width: 120px; /* Set the size of the X and O images */
+  max-height: 120px;
+}
+
+
+
+
